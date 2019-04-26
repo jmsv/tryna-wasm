@@ -1,0 +1,13 @@
+{
+  "name": "tryna-wasm",
+  "version": "0.0.0",
+  "description": "testing webassembly stuff",
+  "main": "hello.js",
+  "scripts": {
+    "build": "emcc hello.c -s WASM=1 -o hello.build.js",
+    "start": "npm run build && node hello.build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Vickery",
+  "license": "MIT"
+}
